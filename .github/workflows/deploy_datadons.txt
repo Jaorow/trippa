@@ -1,0 +1,70 @@
+# name: Build and deploy ASP.Net Core app to Azure Web App - datadons
+
+# on:
+#   push:
+#     branches:
+#       # TODO: AutoDeploy
+#       - DEPLOY
+#   workflow_dispatch:
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - uses: actions/checkout@v2
+
+#       - name: Set up .NET Core
+#         uses: actions/setup-dotnet@v1
+#         with:
+#           dotnet-version: '7.x'
+#           include-prerelease: true
+
+#       - name: Build with dotnet
+#         run: |
+#           cd datadons-backend
+#           dotnet build --configuration Release
+
+#       - name: dotnet publish
+#         run: |
+#           cd datadons-backend
+#           dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+
+#       - name: Upload artifact for deployment job
+#         uses: actions/upload-artifact@v2
+#         with:
+#           name: .net-app
+#           path: ${{env.DOTNET_ROOT}}/myapp
+
+#   deploy:
+#     runs-on: ubuntu-latest
+#     needs: build
+#     environment:
+#       name: 'Production'
+#       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+#     steps:
+#       - name: Download artifact from build job
+#         uses: actions/download-artifact@v2
+#         with:
+#           name: .net-app
+
+#       - name: Deploy to Azure Web App
+#         id: deploy-to-webapp
+#         uses: azure/webapps-deploy@v2
+#         with:
+#           app-name: 'datadons'
+#           slot-name: 'Production'
+#           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_56C3CFD2B06644F8849F177B943F56A3 }}
+#           package: .
+
+#       - name: listDir
+#         run: ls -R
+
+        
+#       - name: Apply Entity Framework Migrations
+#         run: |
+#           cd datadons-backend
+#           dotnet ef database update --connection "$AZURE_SQL_CONNECTIONSTRING"
+#         env:
+#           AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}

@@ -1,0 +1,36 @@
+# .NET
+*.dll
+*.exe
+*.pdb
+*.user
+*.bin
+*.obj
+*.cache
+*.log
+*.vscode
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Oo]bj/
+
+# Visual Studio files
+*.csproj.user
+*.editorconfig
+*.sln.docstates
+
+# Visual Studio Code files
+.vscode/
+
+# Package files
+*.nupkg
+*.paket.*
+paket.lock
+paket.references
+
+# Others
+Thumbs.db
+*.DS_Store

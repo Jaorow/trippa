@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100"
+    zoomAndPan="magnify" viewBox="0 0 75 74.999997" height="100" preserveAspectRatio="xMidYMid meet"
+    version="1.0">
+    <path stroke-linecap="butt"
+        transform="matrix(0.000000000000000046, 0.75, -0.75, 0.000000000000000046, 38.624998, 7.499998)"
+        fill="none" stroke-linejoin="miter" d="M 11.250003 1.499998 L 68.750008 1.499998 "
+        stroke="#357a48" stroke-width="3" stroke-opacity="1" stroke-miterlimit="4" />
+    <path stroke-linecap="round"
+        transform="matrix(0.000000000000000046, 0.75, -0.75, 0.000000000000000046, 38.624998, 7.499998)"
+        fill="none" stroke-linejoin="round"
+        d="M 1.500002 1.499998 C 1.500002 -0.984377 3.515627 -3.000002 6.000003 -3.000002 C 8.484378 -3.000002 10.500003 -0.984377 10.500003 1.499998 C 10.500003 3.984373 8.484378 5.999998 6.000003 5.999998 C 3.515627 5.999998 1.500002 3.984373 1.500002 1.499998 "
+        stroke="#357a48" stroke-width="3" stroke-opacity="1" stroke-miterlimit="4" />
+    <path stroke-linecap="round"
+        transform="matrix(0.000000000000000046, 0.75, -0.75, 0.000000000000000046, 38.624998, 7.499998)"
+        fill="none" stroke-linejoin="round"
+        d="M 78.500009 1.499998 C 78.500009 3.984373 76.484383 5.999998 74.000008 5.999998 C 71.515633 5.999998 69.500008 3.984373 69.500008 1.499998 C 69.500008 -0.984377 71.515633 -3.000002 74.000008 -3.000002 C 76.484383 -3.000002 78.500009 -0.984377 78.500009 1.499998 "
+        stroke="#357a48" stroke-width="3" stroke-opacity="1" stroke-miterlimit="4" />
+</svg>
